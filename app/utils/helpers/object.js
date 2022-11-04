@@ -23,7 +23,7 @@ Property.init({
     },
 rating :{
         type: DataType.FLOAT,
-        allowNull: true
+        allowNull: false
     },
     features :{
         type: DataType.TEXT,
