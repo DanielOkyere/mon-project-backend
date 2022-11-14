@@ -5,7 +5,7 @@ import Product from '../../models/user/product';
  */
  class ProductService {
     /**
-       * insertUser - Inserts a new property into database
+       * insertProduct - Inserts a new product into database
        * @param {Obj} data - Object containing property details
        * @returns {Obj}
        */
@@ -18,8 +18,8 @@ import Product from '../../models/user/product';
     }
   
     /**
-     * getProperty - Fetches property  information from Database
-     * @param {Obj} data - Contains property number
+     * getProduct - Fetches product  information from Database
+     * @param {Obj} data - Contains product number
      * @returns Object of property
      */
     static async getProperty(data) {
