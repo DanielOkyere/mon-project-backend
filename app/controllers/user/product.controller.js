@@ -16,7 +16,7 @@ const {
  */
 class ProductController {
   /**
-     * CreateUser - Handles request for creating a new Product
+     * CreateProduct - Handles request for creating a new Product
      * @param {Obj} req - Request Object
      * @param {Obj} res - Response Object
      * @memberof ProductController
@@ -38,7 +38,7 @@ class ProductController {
   }
 
   /**
-   * getUser - Handles the reguest for getting User
+   * getProduct - Handles the reguest for getting Product
    * @param {Obj} req - Request object
    * @param {Obj} res - Response Object
    * @return {Data | Error}
