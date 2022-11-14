@@ -7,6 +7,6 @@ const {
 const router = Router();
 
 router.get('/', getProduct);
-router.post('/details', createProduct);
+router.post('/product', createProduct);
 
 export default router;
