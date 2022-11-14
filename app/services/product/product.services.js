@@ -20,9 +20,9 @@ import Product from '../../models/user/product';
     /**
      * getProduct - Fetches product  information from Database
      * @param {Obj} data - Contains product number
-     * @returns Object of property
+     * @returns Object of product
      */
-    static async getProperty(data) {
+    static async getProduct(data) {
       const product = Product.findAll({
         where: {
           id: data
