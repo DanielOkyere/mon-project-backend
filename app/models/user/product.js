@@ -29,7 +29,7 @@ const Product = db.define('Product', {
  },
 
  price:{
-    type: DataTypes.STRING,
+    type: DataTypes.STRING,/*When i tried changing it to number they gave me an error*/
     allowNull: false
  }
   
