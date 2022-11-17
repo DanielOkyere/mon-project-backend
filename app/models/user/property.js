@@ -20,7 +20,7 @@ const Property = db.define('Property', {
     allowNull: false
   },
   rating:{
-    type: DataTypeS.STRING,
+    type: DataTypes.STRING,
     allowNull:false
  },
  feature: {

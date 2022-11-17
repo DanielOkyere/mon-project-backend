@@ -1,4 +1,4 @@
-import PropertyService from '../../services/property/property.service';
+import PropertyService from '../../services/product/property.service';
 import GenericHelper from '../../utils/helpers/generic';
 
 const {
@@ -16,7 +16,7 @@ const {
  */
 class PropertyController {
   /**
-     * CreateUser - Handles request for creating a new Property
+     * CreateProperty - Handles request for creating a new Property
      * @param {Obj} req - Request Object
      * @param {Obj} res - Response Object
      * @memberof PropertyController
@@ -26,7 +26,7 @@ class PropertyController {
     try {
       const result = await insertProperty({ ...req.body });
       successResponse(res, {
-        data: result.id,
+        data: result,
         message: 'Added property successfully',
         code: 201
       });
@@ -38,14 +38,14 @@ class PropertyController {
   }
 
   /**
-   * getUser - Handles the reguest for getting User
+   * getProperty - Handles the reguest for getting property
    * @param {Obj} req - Request object
    * @param {Obj} res - Response Object
    * @return {Data | Error}
    */
   static async getProperty(req, res) {
     try {
-      const user = await getProperty(req.query.email);
+      const user = await getProperty(req.query.id);
       successResponse(res, {
         data: user,
         message: 'Property Retrieved Successfully'
